@@ -54,7 +54,7 @@ const Carousel = () => {
       data-carousel="slide"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-[42rem] overflow-hidden rounded-lg md:h-96">
+      <div className="relative h-[42rem] overflow-hidden md:h-96 ">
         {images.map((image, index) => (
           <div
             key={index}

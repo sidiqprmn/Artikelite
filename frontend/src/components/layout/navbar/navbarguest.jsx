@@ -1,28 +1,31 @@
 import React from "react";
 import Dropdown from "./dropdown";
-// import {
-//   Navbar,
-//   Typography,
-//   IconButton,
-//   Button,
-//   Input,
-// } from "@material-tailwind/react";
+import {
+  Avatar,
+  Button,
+  Typography,
+} from "@material-tailwind/react";
 // import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 
 const Navbarguest = () => {
   return (
     <div>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-4">
-          <a href="" className="flex items-center">
-            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" /> */}
+        <div className="w-full flex flex-row items-center justify-between p-2">
+          <a href="" className="flex items-center mr-auto">
+            <img
+              src="/logoAL.png"
+              width="45"
+              className="mr-1"
+              alt="Artikelite Logo"
+            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               ArtikeLite
             </span>
           </a>
 
           <div
-            className="flex flex-row items-center ms-auto w-4/6 justify-between "
+            className="flex flex-row items-center mx-auto justify-between "
             id="navbar-search"
           >
             <form>
@@ -66,34 +69,48 @@ const Navbarguest = () => {
                 </div>
               </div>
             </form>
-            <ul className="flex flex-row font-medium rounded-lg ">
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                  aria-current="page"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Services
-                </a>
-              </li>
-            </ul>
           </div>
+          <ul className="flex flex-row font-medium rounded-lg  mx-auto">
+            <li>
+              <a
+                href="#"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded bg-transparent hover:text-blue-700 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Services
+              </a>
+            </li>
+          </ul>
+          <Button
+            variant="text"
+            color="blue-gray"
+            className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
+          >
+            <Avatar
+              variant="circular"
+              size="sm"
+              alt="candice wu"
+              className="border border-blue-500 p-0.5 me-1"
+              src="./assets/pp.jpg"
+            />
+            <Typography>L<span className="lowercase">alunaaa</span></Typography>
+          </Button>
         </div>
       </nav>
     </div>
