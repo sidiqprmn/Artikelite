@@ -62,7 +62,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Fantasy
+            Politik
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -72,7 +72,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Comedy
+            ekonomi
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -82,7 +82,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Action
+            Teknologi
           </button>
         </div>
         <div className="flex flex-col">
@@ -94,7 +94,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Horror
+            Hiburan
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -104,7 +104,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Romance
+            Olahraga
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -114,7 +114,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Historical
+            Kesehatan
           </button>
         </div>
         <div className="flex flex-col">
@@ -126,7 +126,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Teen Fiction
+            Gaya Hidup
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -136,7 +136,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Adventure
+            Travel
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -146,7 +146,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Thriller
+            Teknologi hijau
           </button>
         </div>
         <div className="flex flex-col">
@@ -158,7 +158,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            mystery
+            Bisnis
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -168,7 +168,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Science
+            Gaya hidup
           </button>
           <button
             className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900"
@@ -178,7 +178,7 @@ const Dropdown = () => {
               toggleDropdown();
             }}
           >
-            Adult
+            Berita lokal
           </button>
         </div>
       </div>

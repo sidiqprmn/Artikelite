@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Dropdown from "./dropdown";
 import {
   Avatar,
@@ -8,9 +8,31 @@ import {
 // import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 
 const Navbarguest = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav
+        className={`bg-white px-7 border-gray-200 dark:bg-gray-900 ${
+          isScrolled ? "fixed top-0 left-0 w-full z-50" : ""
+        }`}
+      >
         <div className="w-full flex flex-row items-center justify-between p-2">
           <a href="" className="flex items-center mr-auto">
             <img
@@ -109,7 +131,9 @@ const Navbarguest = () => {
               className="border border-blue-500 p-0.5 me-1"
               src="./assets/pp.jpg"
             />
-            <Typography>L<span className="lowercase">alunaaa</span></Typography>
+            <Typography>
+              L<span className="lowercase">alunaaa</span>
+            </Typography>
           </Button>
         </div>
       </nav>
