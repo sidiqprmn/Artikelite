@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import {
   Card,
   CardHeader,
@@ -8,7 +9,8 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-const ContentHome = () => {
+const ContentHome = () => 
+{
   return (
     <React.Fragment>
       <div className="content w-full h-[120rem] flex">
@@ -33,13 +35,17 @@ const ContentHome = () => {
                     color="white"
                     className="mb-3 text-4xl"
                   >
+                  <Link to="/artikel">
                     Gempa Bantul Yogyakarta Trending Topic di Twitter, Warganet:
-                    Terasa hingga Pekalongan
+                    Terasa hingga Pekalongan                    
+                  </Link>
                   </Typography>
                   <div className="flex gap-2">
+                    <Link to="/artikel">
                     <Button size="md" color="white">
                       Baca Selengkapnya
-                    </Button>
+                    </Button>                       
+                    </Link> 
                   </div>
                 </div>
               </div>
@@ -66,8 +72,10 @@ const ContentHome = () => {
                       color="black"
                       className="text-sm ms-2"
                     >
+                      <Link to="/artikel">
                       Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                      PDIP: Mereka Bercakap-cakap Santai
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                     </Typography>
                     <Typography
                       variant="h6"
@@ -98,8 +106,10 @@ const ContentHome = () => {
                       color="black"
                       className="text-sm ms-2"
                     >
+                      <Link to="/artikel">
                       Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                      PDIP: Mereka Bercakap-cakap Santai
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                     </Typography>
                     <Typography
                       variant="h6"
@@ -144,8 +154,10 @@ const ContentHome = () => {
                     color="black"
                     className="text-sm ms-2"
                   >
-                    Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                    PDIP: Mereka Bercakap-cakap Santai
+                      <Link to="/artikel">
+                      Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                   </Typography>
                   <Typography
                     variant="h6"
@@ -176,8 +188,10 @@ const ContentHome = () => {
                     color="black"
                     className="text-sm ms-2"
                   >
-                    Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                    PDIP: Mereka Bercakap-cakap Santai
+                      <Link to="/artikel">
+                      Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                   </Typography>
                   <Typography
                     variant="h6"
@@ -208,8 +222,10 @@ const ContentHome = () => {
                     color="black"
                     className="text-sm ms-2"
                   >
-                    Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                    PDIP: Mereka Bercakap-cakap Santai
+                      <Link to="/artikel">
+                      Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                   </Typography>
                   <Typography
                     variant="h6"
@@ -240,8 +256,10 @@ const ContentHome = () => {
                     color="black"
                     className="text-sm ms-2"
                   >
-                    Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
-                    PDIP: Mereka Bercakap-cakap Santai
+                      <Link to="/artikel">
+                      Puan Maharani Bertemu Anies Baswedan Usai Lempar Jumroh,
+                      PDIP: Mereka Bercakap-cakap Santai                        
+                      </Link>
                   </Typography>
                   <Typography
                     variant="h6"

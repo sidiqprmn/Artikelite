@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Button } from "@material-tailwind/react"; // Ganti "nama-pustaka-anda" dengan nama pustaka UI yang Anda gunakan
-
+import { Link } from 'react-router-dom';
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
@@ -86,9 +86,10 @@ const Carousel = () => {
                   {captions[index].time}
                 </Typography>
                 <div className="flex gap-2">
+                  <Link to="/artikel">
                   <Button size="lg" color="white">
                     Baca
-                  </Button>
+                  </Button></Link>
                   <Button size="lg" color="white" variant="text">
                     Share
                   </Button>
